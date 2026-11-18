@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Дубров Дмитро Олександрович, ІО-41, ЛР №2, варіант 10</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .variant-table {
+            --teal: #108f8f;
+            --cream: #f5f510;
+            --ink: #102020;
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+
+        .variant-table col:nth-child(-n+2) { width: 12.5%; }
+        .variant-table col:nth-child(n+3) { width: 25%; }
+
+        .variant-table td {
+            box-sizing: border-box;
+            height: 4rem;
+            padding: 0.5rem;
+            border: 2px solid #222;
+            overflow-wrap: anywhere;
+        }
+
+        .variant-table tr:first-child,
+        .variant-table tr:nth-child(2):hover {
+            background-color: var(--teal);
+            color: #000;
+        }
+
+        .variant-table tr:nth-child(2),
+        .variant-table tr:first-child:hover {
+            background-color: var(--cream);
+            color: var(--ink);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Лабораторна робота №2</h1>
+
+        <section aria-labelledby="table-heading">
+            <h2 id="table-heading">Завдання 1. Таблиця</h2>
+            <table class="variant-table" aria-label="Таблиця варіанта 10">
+                <colgroup><col><col><col><col><col></colgroup>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="2">Дубров</td>
+                        <td>Дмитро</td>
+                        <td rowspan="2">Олександрович</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">ІО-41</td>
+                        <td>ЛР №2, варіант 10</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td colspan="3"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="gear-heading">
+            <h2 id="gear-heading">Завдання 2. Шестерня</h2>
+            <div class="examples">
+                <figure>
+                    <div class="gear gear-position" role="img" aria-label="Сіра шестерня з вісьмома виїмками">
+                        <span class="disc"></span>
+                        <span class="hole"></span>
+                        <span class="cut north"></span>
+                        <span class="cut northeast"></span>
+                        <span class="cut east"></span>
+                        <span class="cut southeast"></span>
+                        <span class="cut south"></span>
+                        <span class="cut southwest"></span>
+                        <span class="cut west"></span>
+                        <span class="cut northwest"></span>
+                    </div>
+                    <figcaption>CSS <code>position</code></figcaption>
+                </figure>
+                <figure>
+                    <div class="gear gear-transform" role="img" aria-label="Сіра шестерня з вісьмома виїмками">
+                        <span class="disc"></span>
+                        <span class="hole"></span>
+                        <span class="cut north"></span>
+                        <span class="cut northeast"></span>
+                        <span class="cut east"></span>
+                        <span class="cut southeast"></span>
+                        <span class="cut south"></span>
+                        <span class="cut southwest"></span>
+                        <span class="cut west"></span>
+                        <span class="cut northwest"></span>
+                    </div>
+                    <figcaption>CSS <code>transform</code></figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
