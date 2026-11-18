@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    color: #1b1b1b;
+    background: #fff;
+    font: 1rem/1.5 system-ui, sans-serif;
+}
+
+.page {
+    width: min(48rem, calc(100% - 2rem));
+    margin: 2rem auto;
+}
+
+h1 { margin: 0 0 0.75rem; }
+
+nav { margin-bottom: 1.25rem; }
+
+nav a {
+    margin-right: 1rem;
+    color: #124166;
+}
+
+nav a[aria-current="page"] { font-weight: 700; }
+
+.layout {
+    width: 100%;
+    margin: 0;
+    aspect-ratio: 313 / 238;
+    color: #000;
+    font: clamp(0.65rem, 2.8vw, 1rem)/1 Arial, sans-serif;
+}
+
+.block {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.side-image { background: #94f8b3; }
+.top-text { background: #74d7f3; }
+.main-text { background: #f7f894; }
+.bottom-text { background: #f8e2b0; }
+.bottom-image { background: #f094f8; }
+
+.top-text span,
+.bottom-text span {
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.top-text span { left: 30%; }
+.bottom-text span { left: 67%; }
+
+.layout-float .layout-top,
+.layout-float .layout-bottom { display: flow-root; }
+
+.layout-float .layout-top { height: 88%; }
+.layout-float .layout-bottom { height: 12%; }
+
+.layout-float .layout-top > *,
+.layout-float .layout-bottom > * {
+    float: left;
+    height: 100%;
+}
+
+.layout-float .side-image,
+.layout-float .bottom-image { width: 30%; }
+
+.layout-float .layout-right,
+.layout-float .bottom-text { width: 70%; }
+
+.layout-float .top-text { height: calc(100% * 12 / 88); }
+.layout-float .main-text { height: calc(100% * 76 / 88); }
+
+.layout-flex,
+.layout-flex .layout-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.layout-flex .layout-top,
+.layout-flex .layout-bottom { display: flex; }
+.layout-flex .layout-top { flex: 0 0 88%; }
+.layout-flex .layout-bottom { flex: 0 0 12%; }
+
+.layout-flex .side-image,
+.layout-flex .bottom-image { flex: 0 0 30%; }
+
+.layout-flex .layout-right,
+.layout-flex .bottom-text { flex: 0 0 70%; }
+
+.layout-flex .top-text { flex: 0 0 calc(100% * 12 / 88); }
+.layout-flex .main-text { flex: 0 0 calc(100% * 76 / 88); }
