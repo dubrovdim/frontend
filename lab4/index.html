@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="HTML5, JavaScript, DOM, лабораторна робота, Будапешт">
+    <meta name="description" content="Особиста сторінка Дмитра Дуброва з інтерактивним керуванням кольорами та фотографією.">
+    <title>Дубров Дмитро Олександрович, ІО-41, ЛР №4, варіант 70</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2 id="student-name"><button type="button" aria-pressed="false">Дубров Дмитро Олександрович</button></h2>
+    <p class="birth-info"><button type="button" aria-pressed="false">Дата й місце народження: <time datetime="2007-09-28">28.09.2007</time>, м. Кривий Ріг.</button></p>
+    <p>Освіта: КГ №104, КПІ.</p>
+
+    <p>Хобі:</p>
+    <ul>
+        <li>Катання на ковзанах</li>
+        <li>Комп’ютерні ігри</li>
+        <li>Програмування</li>
+    </ul>
+
+    <p>Улюблені фільми:</p>
+    <ol>
+        <li>Острів проклятих</li>
+        <li>Джанго вільний</li>
+        <li>Соціальна мережа</li>
+    </ol>
+
+    <p>З міст, у яких я бував, мені найбільше сподобався Будапешт. Історичні будівлі вздовж Дунаю створюють особливу атмосферу, а ввечері підсвічений парламент добре видно з протилежного берега.</p>
+
+    <a id="city-link" href="https://budapest.hu/en">
+        <img id="city-image" src="budapest.jpg" alt="Дунай і підсвічена будівля парламенту. Перейти на офіційний сайт Будапешта" width="720" height="540">
+    </a>
+    <div class="image-controls">
+        <button id="add-image" type="button" disabled>Додати</button>
+        <button id="increase-image" type="button">Збільшити</button>
+        <button id="decrease-image" type="button">Зменшити</button>
+        <button id="remove-image" type="button">Видалити</button>
+    </div>
+    <p><small>Фото: <a href="https://commons.wikimedia.org/wiki/File:Danube_panorama_at_dusk_Budapest_2025.jpeg">Furkan Akkurt</a>.</small></p>
+</body>
+</html>
